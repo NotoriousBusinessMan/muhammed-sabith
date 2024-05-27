@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Cards from "../includes/Cards";
+import { Autoplay } from "swiper/modules";
 
 const Works = () => {
   var settings = {
@@ -13,6 +14,9 @@ const Works = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -53,44 +57,44 @@ const Works = () => {
         <Slider {...settings}>
           <div>
             <Cards
-              img_url="/one.png"
-              title="Alex Hormozi Portfolio"
+              img_url="/bmghs.png"
+              title="BMG HS"
+              paragraph="A proffessional website I made for my School. Including Dashboard functionality"
+            />
+          </div>
+          <div>
+            <Cards
+              img_url="/gym.png"
+              title="Website For Gym"
+              paragraph="I've made this website for a gym, which increased their online presence."
+            />
+          </div>
+          <div>
+            <Cards
+              img_url="/math.png"
+              title="A Math game Website"
+              paragraph="Suitable for kids and adults to increase their maths skills."
+            />
+          </div>
+          <div>
+            <Cards
+              img_url="/aloha.png"
+              title="A personal Portfolio"
               paragraph="A true amazing website to showcase his skills for the vast majority"
             />
           </div>
           <div>
             <Cards
-              img_url="/two.png"
-              title="Alex Hormozi Portfolio"
-              paragraph="A true amazing website to showcase his skills for the vast majority"
+              img_url="/frugo.png"
+              title="Frugo Stores"
+              paragraph="E commerce website for Sports and accessories to showcase"
             />
           </div>
           <div>
             <Cards
-              img_url="/three.png"
-              title="Alex Hormozi Portfolio"
-              paragraph="A true amazing website to showcase his skills for the vast majority"
-            />
-          </div>
-          <div>
-            <Cards
-              img_url="/four.png"
-              title="Alex Hormozi Portfolio"
-              paragraph="A true amazing website to showcase his skills for the vast majority"
-            />
-          </div>
-          <div>
-            <Cards
-              img_url="/one.jpeg"
-              title="Alex Hormozi Portfolio"
-              paragraph="A true amazing website to showcase his skills for the vast majority"
-            />
-          </div>
-          <div>
-            <Cards
-              img_url="/two.png"
-              title="Alex Hormozi Portfolio"
-              paragraph="A true amazing website to showcase his skills for the vast majority"
+              img_url="/boogie.png"
+              title="Boogie Stores"
+              paragraph="A furniture selling website to showcase the different furnitures"
             />
           </div>
         </Slider>

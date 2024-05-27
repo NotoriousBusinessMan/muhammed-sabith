@@ -67,7 +67,7 @@ const Navbar = () => {
             onClick={toggleMenu}
           />
         </div>
-        <div className="bottom mt-44">
+        <div className="bottom mt-24">
           <ul className="flex flex-col items-center">
             <li className="mb-10 font-semibold text-center text-gray-950">
               <Link href="/#about" onClick={handleLinkClick}>
@@ -92,7 +92,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div
-          className="calltoactions flex flex-col items-center mt-20"
+          className="calltoactions flex flex-col items-center mt-12"
           onClick={handleLinkClick}>
           <LinkButton
             title="Contact Me"
