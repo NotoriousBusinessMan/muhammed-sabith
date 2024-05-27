@@ -1,6 +1,10 @@
 import React from "react";
 import LinkButton from "../includes/LinkButton";
 
+//font awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+
 const Hero = () => {
   return (
     <section className="heroSection px-8 py-36 w-full flex flex-col items-center justify-center">
@@ -28,6 +32,17 @@ const Hero = () => {
           title="See My Works"
           href="/#works"
           classes="mr-3 border-black hover:border-cyan-700 hover:text-cyan-700 w-40 text-center mb-3 md:mb-0"
+        />
+      </div>
+      <div className="callToActionContainer flex items-center space-x-7 mt-14">
+        <FontAwesomeIcon
+          icon={faPhone}
+          className="w-8 h-8  text-black hover:scale-125 transition-all ease-linear"
+        />
+
+        <FontAwesomeIcon
+          icon={faEnvelope}
+          className="w-8 h-8 text-black hover:scale-125 transition-all ease-linear"
         />
       </div>
     </section>

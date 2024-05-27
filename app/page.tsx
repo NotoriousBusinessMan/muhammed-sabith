@@ -6,7 +6,6 @@ import Contact from "@/components/screens/Contact";
 import Hero from "@/components/screens/Hero";
 import Skills from "@/components/screens/Skills";
 import Works from "@/components/screens/Works";
-import Image from "next/image";
 
 export default function Home() {
   return (
