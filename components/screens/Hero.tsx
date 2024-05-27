@@ -4,7 +4,7 @@ import LinkButton from "../includes/LinkButton";
 const Hero = () => {
   return (
     <section className="heroSection px-8 py-36 w-full flex flex-col items-center justify-center">
-      <h1 className="font-semibold text-center md:text-6xl mb-4 text-3xl">
+      <h1 className="font-semibold text-center sm:text-6xl mb-4 text-4xl">
         Hi <i className="not-italic hidden lg:inline-block">👋</i>, It&apos;s Me
         <br />
         <b>Muhammed Sabith</b>
