@@ -5,7 +5,9 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <section id="skills" className="skillSection px-20 py-36 w-full">
+    <section
+      id="skills"
+      className="skillSection px-8 md:px-20 py-20 md:py-36 w-full">
       <div className="top mb-16 lg:mb-36">
         <h1 className="font-semibold text-center md:text-left text-3xl md:text-6xl mb-4">
           My Skills & Experience

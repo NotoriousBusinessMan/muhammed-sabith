@@ -41,7 +41,9 @@ const Works = () => {
     ],
   };
   return (
-    <section id="works" className="worksSection px-20 py-36 w-full">
+    <section
+      id="works"
+      className="worksSection px-8 md:px-20 py-20 md:py-36 w-full">
       <div className="top mb-20">
         <h1 className="font-semibold text-center md:text-left text-3xl md:text-6xl mb-4">
           My Past Projects for My Clients

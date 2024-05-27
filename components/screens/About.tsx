@@ -3,8 +3,10 @@ import KeyPoints from "../includes/KeyPoints";
 
 const About = () => {
   return (
-    <section id="about" className="aboutSection px-20 py-36 w-full">
-      <div className="top mb-36">
+    <section
+      id="about"
+      className="aboutSection px-8 md:px-20 py-20 md:py-36 w-full">
+      <div className="top mb-16 md:mb-36">
         <h1 className="font-semibold text-center md:text-left text-3xl md:text-6xl mb-4">
           About Me & <br /> How I can Help you
         </h1>

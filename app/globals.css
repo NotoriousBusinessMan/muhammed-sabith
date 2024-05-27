@@ -7,6 +7,9 @@
     @apply scroll-smooth;
   }
 }
+.no-scroll {
+  overflow: hidden;
+}
 body {
   background: linear-gradient(220.55deg, #dde4ff 0%, #8da2ee 100%);
 }
@@ -21,4 +24,7 @@ textarea {
 input:focus {
   border: none !important;
   outline: none;
+}
+.hamMenu {
+  background: linear-gradient(220.55deg, #dde4ff 0%, #8da2ee 100%);
 }

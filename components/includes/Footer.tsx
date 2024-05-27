@@ -45,7 +45,7 @@ const Footer = () => {
           />
         </Link>
         <Link
-          href="https://wa.me/1234567890?text=Hello%20I'm%20interested%20in%20your%20works%20!!!"
+          href="https://wa.me/7736572490?text=Hello%20I'm%20interested%20in%20your%20works%20!!!"
           target="_blank"
           rel="noopener noreferrer">
           <FontAwesomeIcon
