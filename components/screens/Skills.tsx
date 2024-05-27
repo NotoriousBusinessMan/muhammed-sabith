@@ -43,6 +43,7 @@ const Skills = () => {
           <Image src="/nextjs.png" alt="html" width={50} height={50} />
           <Image src="/tailwind.png" alt="html" width={50} height={50} />
           <Image src="/vercel.png" alt="html" width={80} height={80} />
+          <Image src="/ts.png" alt="html" width={50} height={50} />
         </div>
       </div>
     </section>

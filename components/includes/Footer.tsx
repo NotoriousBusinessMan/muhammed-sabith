@@ -7,6 +7,7 @@ import {
   faFacebook,
   faLinkedin,
   faWhatsapp,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
@@ -50,6 +51,16 @@ const Footer = () => {
           rel="noopener noreferrer">
           <FontAwesomeIcon
             icon={faWhatsapp}
+            size="2x"
+            className="w-6 text-white"
+          />
+        </Link>
+        <Link
+          href="https://github.com/NotoriousBusinessMan"
+          target="_blank"
+          rel="noopener noreferrer">
+          <FontAwesomeIcon
+            icon={faGithub}
             size="2x"
             className="w-6 text-white"
           />
