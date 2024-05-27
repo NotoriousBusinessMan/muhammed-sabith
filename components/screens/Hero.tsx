@@ -43,7 +43,7 @@ const Hero = () => {
           />
         </Link>
 
-        <Link href="mailto:your-email@example.com">
+        <Link href="mailto:masterdevsabith@gmail.com">
           <FontAwesomeIcon
             icon={faEnvelope}
             className="w-8 h-8 text-black hover:scale-125 transition-all ease-linear"
