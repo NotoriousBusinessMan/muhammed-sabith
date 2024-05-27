@@ -1,5 +1,6 @@
 import React from "react";
 import LinkButton from "../includes/LinkButton";
+import Link from "next/link";
 
 //font awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -35,15 +36,19 @@ const Hero = () => {
         />
       </div>
       <div className="callToActionContainer flex items-center space-x-7 mt-14">
-        <FontAwesomeIcon
-          icon={faPhone}
-          className="w-8 h-8  text-black hover:scale-125 transition-all ease-linear"
-        />
+        <Link href="tel:+91 7736572490">
+          <FontAwesomeIcon
+            icon={faPhone}
+            className="w-8 h-8  text-black hover:scale-125 transition-all ease-linear"
+          />
+        </Link>
 
-        <FontAwesomeIcon
-          icon={faEnvelope}
-          className="w-8 h-8 text-black hover:scale-125 transition-all ease-linear"
-        />
+        <Link href="mailto:your-email@example.com">
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            className="w-8 h-8 text-black hover:scale-125 transition-all ease-linear"
+          />
+        </Link>
       </div>
     </section>
   );
