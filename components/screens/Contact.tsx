@@ -1,6 +1,26 @@
+"use client";
+
 import React from "react";
 
+import { useForm } from "react-hook-form";
+import { sendEmail } from "@/utils/send-email";
+
+export type FormData = {
+  firstname: string;
+  lastname: string;
+  email: string;
+  phoneno: string;
+  subject: string;
+  message: string;
+};
+
 const Contact = () => {
+  const { register, handleSubmit } = useForm<FormData>();
+
+  function onSubmit(data: FormData) {
+    sendEmail(data);
+  }
+
   return (
     <section
       id="contact"
@@ -11,7 +31,7 @@ const Contact = () => {
         </h1>
       </div>
       <div className="bottom w-full ">
-        <div id="form w-full">
+        <form onSubmit={handleSubmit(onSubmit)} id="form w-full">
           <div className="input-group w-full flex items-center space-x-5 lg:space-x-10 mb-5">
             <div className="inputSet w-full ">
               <label htmlFor="firstname" className="mb-2 block">
@@ -19,11 +39,11 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                name="firstname"
                 id="firstname"
                 placeholder="firstname"
                 required
                 className="w-full px-4 py-2 rounded-lg"
+                {...register("firstname", { required: true })}
               />
             </div>
             <div className="inputSet w-full ">
@@ -32,11 +52,11 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                name="lastname"
                 id="lastname"
                 placeholder="lastname"
                 required
                 className="w-full px-4 py-2 rounded-lg"
+                {...register("lastname", { required: true })}
               />
             </div>
           </div>
@@ -48,11 +68,11 @@ const Contact = () => {
               </label>
               <input
                 type="email"
-                name="email"
                 id="email"
                 placeholder="email"
                 required
                 className="w-full px-4 py-2 rounded-lg"
+                {...register("email", { required: true })}
               />
             </div>
             <div className="inputSet w-full">
@@ -61,11 +81,11 @@ const Contact = () => {
               </label>
               <input
                 type="number"
-                name="phone"
                 id="phone"
                 placeholder="phone number"
                 required
                 className="w-full px-4 py-2 rounded-lg"
+                {...register("phoneno", { required: true })}
               />
             </div>
           </div>
@@ -77,11 +97,11 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                name="subject"
                 id="subject"
                 placeholder="subject"
                 required
                 className="w-full px-4 py-2 rounded-lg"
+                {...register("subject", { required: true })}
               />
             </div>
           </div>
@@ -92,11 +112,11 @@ const Contact = () => {
                 Message:
               </label>
               <textarea
-                name="message"
                 id="message"
                 className="w-full px-4 py-2 rounded-lg"
                 cols={200}
-                placeholder="your message"></textarea>
+                placeholder="your message"
+                {...register("message", { required: true })}></textarea>
             </div>
           </div>
 
@@ -105,7 +125,7 @@ const Contact = () => {
               Submit
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </section>
   );
